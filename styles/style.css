@@ -18,5 +18,10 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), 'Inter-Variable', 'Arial';
-  font-variation-settings: 'wdth' var(--font-weight-normal);
+  font-variation-settings: 'wght' var(--font-weight-normal);
+  background-color: var(--main-color, #ffffff);
+  color: var(--accent-color, #000000);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
