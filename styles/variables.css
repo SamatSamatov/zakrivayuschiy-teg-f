@@ -4,6 +4,9 @@
   --accent-font: 'PressStart2P';
   --font-weight-normal: 400;
   --font-weight-bold: 700;
-  --accent-color: #000000;
-  --main-color: #ffffff;
+  --accent-color: #000;
+  --main-color: #fff;
+  --bg-image: repeating-linear-gradient(90deg, #d3d3d3 , transparent 2px),
+              repeating-linear-gradient(transparent, #d3d3d3 2px),
+              linear-gradient(#e7e7e7 0.1%, #1a1a1a 100%);
 }

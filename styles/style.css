@@ -19,8 +19,9 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), 'Inter-Variable', 'Arial';
   font-variation-settings: 'wght' var(--font-weight-normal);
-  background-color: var(--main-color, #ffffff);
-  color: var(--accent-color, #000000);
+  background-color: var(--main-color, #fff);
+  color: var(--accent-color, #000);
+  background-image: var(--bg-image);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
