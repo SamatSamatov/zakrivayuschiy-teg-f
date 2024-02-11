@@ -16,8 +16,10 @@
 
 .page {
   min-inline-size: 320px;
+  max-inline-size: 700px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), 'Inter-Variable', 'Arial';
+  margin: 0 auto;
+  font-family: var(--main-font, 'Inter-Variable', 'Arial');
   font-variation-settings: 'wght' var(--font-weight-normal);
   background-color: var(--main-color, #fff);
   color: var(--accent-color, #000);
@@ -26,3 +28,80 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+.header {
+  margin-block-start: 100px;
+  font-family: var(--accent-font, 'PressStart2P', 'Arial');
+  text-transform: uppercase;
+  font-weight: var(--font-weight-normal, 400);
+  background-color: var(--main-color, #fff);
+  box-shadow: var(--box-shadow-content, inset 0 0 0 2px var(--accent-color, #000));
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 136px 0 25px 0;
+}
+
+@media (width <= 375px) {
+  .header {
+    padding: 120px 0 25px 0;
+  }
+}
+
+.header_logo {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  text-decoration: none;
+}
+
+.header_title {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);;
+}
+
+.theme-menu {
+  margin-top: 5px;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.theme-menu__button {
+  padding: 0;
+  margin-left: 18px;
+  position: relative;
+  display: block;
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: var(--font-weight-normal, 400);
+  transition: opacity 0.4s ease;
+}
+
+.theme-menu__button:disabled{
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.theme-menu__button:disabled::before {
+  content: '▶';
+  position: absolute;
+  animation: pointer 0.5s infinite ease-in-out alternate;
+  width: 14px;
+  height: 14px;
+}
+
+/* .theme-menu__button::after {
+  content: '';
+  display: block;
+  background-color: var(--accent-color);
+  transition: scale 0.3s;
+  transform-origin: left;
+  inline-size: 100%;
+  block-size: 2px;
+  scale: 0;
+} */

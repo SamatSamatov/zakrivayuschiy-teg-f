@@ -30,7 +30,7 @@
   --bg-gradient-color-2: #004306;
   --bg-image: repeating-linear-gradient(90deg, #000, transparent 2px),
               repeating-linear-gradient(transparent, #000 2px),
-              linear-gradient(#007f0c 0.1%, #004306 100%);
+              linear-gradient(#007f0c 0.01%, #004306 100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,6 +45,6 @@
     --bg-gradient-color-2: #004306;
     --bg-image: repeating-linear-gradient(90deg, #000, transparent 2px),
                 repeating-linear-gradient(transparent, #000 2px),
-                linear-gradient(#007f0c 0.1%, #004306 100%);
+                linear-gradient(#007f0c 0.01%, #004306 100%);
     }
 }
