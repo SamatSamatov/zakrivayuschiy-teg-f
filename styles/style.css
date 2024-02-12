@@ -129,7 +129,7 @@
   border: solid 2px var(--accent-color, #000);
 }
 
-.article-conteiner-text {
+.article-conteiner-content {
   display: flex;
   flex-direction: column;
   gap: 27px;
