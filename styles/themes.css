@@ -17,6 +17,7 @@
   --bg-image: repeating-linear-gradient(90deg, #d3d3d3 , transparent 2px),
               repeating-linear-gradient(transparent, #d3d3d3 2px),
               linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+  --text-stoke: #fff;
 }
 
 :root.theme-dark {
@@ -28,9 +29,8 @@
   --main-color: #000;
   --bg-gradient-color-1: #007F0C;
   --bg-gradient-color-2: #004306;
-  --bg-image: repeating-linear-gradient(90deg, #000, transparent 2px),
-              repeating-linear-gradient(transparent, #000 2px),
-              linear-gradient(#007f0c 0.01%, #004306 100%);
+  --bg-image: repeating-linear-gradient(90deg, #000, transparent 2px), repeating-linear-gradient(transparent, #000 2px), linear-gradient(#007f0c 0.01%, #004306 100%);
+  --text-stoke: #000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,8 +43,7 @@
     --main-color: #000;
     --bg-gradient-color-1: #007F0C;
     --bg-gradient-color-2: #004306;
-    --bg-image: repeating-linear-gradient(90deg, #000, transparent 2px),
-                repeating-linear-gradient(transparent, #000 2px),
-                linear-gradient(#007f0c 0.01%, #004306 100%);
+    --bg-image: repeating-linear-gradient(90deg, #000, transparent 2px),repeating-linear-gradient(transparent, #000 2px), linear-gradient(#007f0c 0.01%, #004306 100%);
+    --text-stoke: #000;
     }
 }
