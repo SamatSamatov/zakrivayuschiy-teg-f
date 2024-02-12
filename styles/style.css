@@ -81,7 +81,7 @@
   transition: opacity 0.4s ease;
 }
 
-.theme-menu__button:disabled{
+.theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
 }
@@ -94,16 +94,30 @@
   height: 14px;
 }
 
-/* .theme-menu__button::after {
+.theme-menu__button:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.theme-menu__button:focus-visible {
+  outline: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button::after {
   content: '';
   display: block;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color, #000);
   transition: scale 0.3s;
   transform-origin: left;
   inline-size: 100%;
   block-size: 2px;
   scale: 0;
-} */
+}
+
+.theme-menu__button:focus-visible::after {
+  scale: 1;
+}
 
 .main-section {
   margin-top: 105px;
