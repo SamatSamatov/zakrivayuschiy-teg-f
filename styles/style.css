@@ -190,17 +190,29 @@ a {
   }
 } 
 
-.card__like-button {
+.button-common-styles {
   font-family: var(--accent-font, 'PressStart2P', 'Arial');
   background-color: var(--main-color, #fff);
   border: 2px solid var(--accent-color, #000);
+}
+
+.card__like-button {
   padding: 2px 17px;
 }
 
-.card__like-button:focus {
+.card__like-button:focus,
+.save-button:focus {
   outline: none;
   box-shadow: 2px 2px 0 var(--accent-color, #000);
   transition: box-shadow 0.4s ease;
+}
+
+.save-button {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  padding: 15px 20px;
 }
 
 .footer {
