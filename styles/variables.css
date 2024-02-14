@@ -11,4 +11,6 @@
   --box-shadow-button: 2px 2px 0 var(--accent-color, #000);
   --text-stoke: #fff;
   --button-text-color: #fff; 
+  --heart-contour: #000;
+  --sparks-color: #FF0000;
 }

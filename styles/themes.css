@@ -21,6 +21,8 @@
   --box-shadow-button: 2px 2px 0 var(--accent-color, #000);
   --text-stoke: #fff;
   --button-text-color: #fff; 
+  --heart-contour: #000;
+  --sparks-color: #FF0000;
 }
 
 :root.theme-dark {
@@ -37,6 +39,8 @@
   --box-shadow-button: 2px 2px 0 var(--accent-color, #00CC14);
   --text-stoke: #000;
   --button-text-color: #00CC14;
+  --heart-contour: #00CC14;
+  --sparks-color: #FF0000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,5 +58,7 @@
     --box-shadow-button: 2px 2px 0 var(--accent-color, #00CC14);
     --text-stoke: #000;
     --button-text-color: #00CC14;
+    --heart-contour: #00CC14;
+    --sparks-color: #FF0000;
     }
 }
