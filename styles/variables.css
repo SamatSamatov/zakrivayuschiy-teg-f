@@ -12,5 +12,7 @@
   --text-stoke: #fff;
   --button-text-color: #fff; 
   --heart-contour: #000;
+  --heart-fill: #000;
+  --heart-fill-active: #FF0000;
   --sparks-color: #FF0000;
 }

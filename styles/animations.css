@@ -12,6 +12,40 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+.sparks {
+  opacity: 0;
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s;
+}
+
+.contour {
+  transition: 0.3s 0.06s;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s 0.05s;
+}
+
+.heart:hover .core {
+  fill: var(--heart-fill, #000);
+}
+
+.heart:hover .main-body {
+  fill: var(--heart-fill, #000);
+}
+
+.heart:active .core {
+  fill: var(--heart-fill-active, #FF0000);
+}
+
+.heart:active .main-body {
+  fill: var(--heart-fill-active, #FF0000);
+}
+
 @keyframes pointer {
   0% {
     left: -20px;
