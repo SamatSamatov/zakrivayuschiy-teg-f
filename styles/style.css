@@ -216,7 +216,7 @@ a {
 .card__like-button::before {
   content: "";
 	position: absolute;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color, #000);
   transition: 0.5s ease-in-out;
 	inline-size: 100%;
 	block-size: 100%;
@@ -225,6 +225,16 @@ a {
 
 .card__like-button:hover::before {
   translate: 0%;
+}
+
+.button__text {
+  position: relative;
+  color: var(--button-text-color, #fff);
+  font-family: var(--accent-font, 'PressStart2P', 'Arial');
+  font-weight: inherit;
+  font-size: 14px;
+  line-height: 0.9;
+  mix-blend-mode: difference;
 }
 
 .save-button {
@@ -249,6 +259,12 @@ a {
 
 .save-button:hover::before {
   translate: 0%;
+}
+
+.floppy {
+  position: relative;
+  color: var(--button-text-color, #fff);
+  mix-blend-mode: difference;
 }
 
 @media (width <= 375px) {
