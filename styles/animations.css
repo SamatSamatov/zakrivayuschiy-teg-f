@@ -46,6 +46,18 @@
   fill: var(--heart-fill-active, #FF0000);
 }
 
+.like-icon.is-liked .core {
+  fill: var(--heart-fill-active, #FF0000);
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-fill-active, #FF0000);
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-fill-active, #FF0000);
+}
+
 @keyframes pointer {
   0% {
     left: -20px;
