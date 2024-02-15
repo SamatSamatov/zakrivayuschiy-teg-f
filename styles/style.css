@@ -306,6 +306,11 @@ a {
   padding: 30px 38px;
 }
 
+.dialog::backdrop {
+  background-color: #000;
+  opacity: 0.75;
+}
+
 .pop-up-content {
   display: grid;
   gap: 30px;
