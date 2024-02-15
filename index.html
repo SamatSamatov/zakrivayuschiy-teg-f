@@ -83,7 +83,10 @@
       </article>
     </main>
     <footer class="footer">
-      <button type="button" class="save-button button-common-styles">
+      <button type="button"
+      class="save-button button-common-styles" 
+      onclick="window['dialog-id'].showModal();"
+      aria-controls="dialog-id">
         <svg class="floppy" width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <use href="./svg/floppy.svg#floppy">
         </svg>
@@ -91,6 +94,21 @@
           Сохранить на память
         </span>
       </button>
+      <dialog id="dialog-id" class="dialog" open>
+        <div class="pop-up-content">
+          <div class="content-wrapper">
+            <svg class="floppy" width="39" height="39" viewBox="0 0 28 29" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <use href="./svg/floppy.svg#floppy">
+            </svg>
+            <span class="pop-up-text">Вставьте дискету, чтобы продолжить</span>
+          </div>
+          <form method="dialog">
+            <button type="button" class="pop-up-button button-common-styles"
+            type="submit" onclick="window['dialog-id'].close();">
+              <span class="button__text">OK</span>
+            </button>
+        </div>
+      </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
   </body>

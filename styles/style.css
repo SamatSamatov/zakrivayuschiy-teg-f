@@ -279,6 +279,7 @@ a {
   position: relative;
   color: var(--button-text-color, #fff);
   mix-blend-mode: difference;
+  flex-shrink: 0;
 }
 
 @media (width <= 375px) {
@@ -297,3 +298,58 @@ a {
   align-items: center;
   margin-top: 50px;
 }
+
+.dialog {
+  width: calc(clamp(21.313rem, 1.502vw + 20.96rem, 22.313rem));
+  background-color: var(--main-color, #fff);
+  border: 2px solid var(--accent-color, #000);
+  padding: 30px 38px;
+}
+
+.pop-up-content {
+  display: grid;
+  gap: 30px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pop-up-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 17px;
+  inline-size: 100%;
+  line-height: 0.9;
+}
+
+.pop-up-button::before {
+  content: "";
+	position: absolute;
+  background-color: var(--accent-color);
+  transition: 0.5s ease-in-out;
+	inline-size: 100%;
+	block-size: 100%;
+  translate: -100%;
+}
+
+.pop-up-button:hover::before {
+  translate: 0%;
+}
+
+.pop-up-text {
+  font-family: var(--accent-font, 'PressStart2P', 'Arial');
+  font-weight: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--accent-color, #000);
+}
+   
+    
+   
+  
+    
