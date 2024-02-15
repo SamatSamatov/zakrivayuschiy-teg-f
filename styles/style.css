@@ -220,8 +220,8 @@ a {
   min-inline-size: 130px;
 }
 
-.card__like-button:focus,
-.save-button:focus {
+.card__like-button:focus-visible,
+.save-button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--accent-color, #000);
   transition: box-shadow 0.4s ease;
