@@ -14,10 +14,6 @@
 
 */
 
-a {
-  outline: none;
-}
-
 .page {
   min-inline-size: 320px;
   max-inline-size: 700px;
@@ -304,6 +300,25 @@ a {
     align-items: center;
     padding: 15px 20px;
   }  
+}
+
+a {
+  outline: none;
+  border: none;
+}
+
+.link-decoration:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.link-decoration:focus {
+  outline: none;
+  border: 1px solid currentColor;
+}
+
+.link-decoration:focus-visible {
+  outline: none;
+  border: 1px solid currentColor;
 }
 
 .footer {
