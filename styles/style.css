@@ -146,7 +146,6 @@
   object-fit: cover;
   display: block;
   background-position: center;
-  border: solid 2px var(--accent-color, #000);
 }
 
 .article-conteiner-content {
@@ -166,6 +165,7 @@
 
 .article-conteiner-img {
   position: relative;
+  border: solid 2px var(--accent-color, #000);
 }
 
 .watermark-img {
@@ -191,6 +191,48 @@
       text-stroke: 1px var(--text-stoke, #fff);
       text-shadow: none;
   }
+}
+
+.black-white-filter {
+  filter: grayscale(100%) sepia(17%) hue-rotate(48deg) saturate(0%) contrast(64%);
+  -webkit-filter: grayscale(100%) sepia(17%) hue-rotate(48deg) saturate(0%) contrast(64%);
+  -moz-filter: grayscale(100%) sepia(17%) hue-rotate(48deg) saturate(0%) contrast(64%);
+}
+
+.sepia {
+  filter: sepia(83%);
+  -webkit-filter: sepia(83%);
+  -moz-filter: sepia(83%);
+}
+
+.brightness {
+  filter: brightness(117%) saturate(100%);
+  -webkit-filter: brightness(117%) saturate(100%);
+  -moz-filter: brightness(117%) saturate(100%);
+}
+
+.saturate {
+  filter: saturate(30%) invert(10%);
+  -webkit-filter: saturate(30%) invert(10%);
+  -moz-filter: saturate(30%) invert(10%);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+
+.blur {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+}
+
+.contrast {
+  filter: contrast(115%);
+  -webkit-filter: contrast(115%);
+  -moz-filter: contrast(115%);
 }
 
 .article-buttons {
