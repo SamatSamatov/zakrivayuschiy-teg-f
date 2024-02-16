@@ -126,7 +126,7 @@ a {
 .main-section {
   margin-top: 100px;
   display: grid;
-  grid-row-gap: 55px;
+  grid-row-gap: 50px;
 }
 
 .article {
@@ -311,6 +311,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .dialog {
