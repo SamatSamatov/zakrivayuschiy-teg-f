@@ -6,17 +6,16 @@
 */
 
 :root.theme-light {
-  --main-font: 'Inter-Variable';
-  --accent-font: 'PressStart2P';
+  --main-font: 'Inter-Variable', sans-serif;
+  --accent-font: 'PressStart2P', Arial;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --accent-color: #000;
   --main-color: #fff;
   --bg-gradient-color-1: #E7E7E7;
   --bg-gradient-color-2: #1A1A1A;
-  --bg-image: repeating-linear-gradient(90deg, #d3d3d3 , transparent 2px),
-              repeating-linear-gradient(transparent, #d3d3d3 2px),
-              linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+  --repeating-gradient: #d3d3d3;
+  --linear-gradient: #e7e7e7 0.01%, #1a1a1a;
   --box-shadow-content: inset 0 0 0 2px var(--accent-color, #000);    
   --box-shadow-button: 2px 2px 0 var(--accent-color, #000);
   --text-stoke: #fff;
@@ -28,17 +27,18 @@
 }
 
 :root.theme-dark {
-  --main-font: 'Inter-Variable';
-  --accent-font: 'PressStart2P';
+  --main-font: 'Inter-Variable', sans-serif;
+  --accent-font: 'PressStart2P', Arial;
   --font-weight-normal: 465;
   --font-weight-bold: 785;
   --accent-color: #00CC14;
   --main-color: #000;
   --bg-gradient-color-1: #007F0C;
   --bg-gradient-color-2: #004306;
-  --bg-image: repeating-linear-gradient(90deg, #000, transparent 2px), repeating-linear-gradient(transparent, #000 2px), linear-gradient(#007f0c 0.01%, #004306 100%);
   --box-shadow-content: inset 0 0 0 2px var(--accent-color, #00CC14);    
   --box-shadow-button: 2px 2px 0 var(--accent-color, #00CC14);
+  --repeating-gradient: #000;
+  --linear-gradient: #007f0c 0.01%, #004306;
   --text-stoke: #000;
   --button-text-color: #00CC14;
   --heart-contour: #00CC14;
@@ -49,17 +49,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-font: 'Inter-Variable';
-    --accent-font: 'PressStart2P';
+    --main-font: 'Inter-Variable', sans-serif;
+    --accent-font: 'PressStart2P', Arial;
     --font-weight-normal: 465;
     --font-weight-bold: 785;
     --accent-color: #00CC14;
     --main-color: #000;
     --bg-gradient-color-1: #007F0C;
     --bg-gradient-color-2: #004306;
-    --bg-image: repeating-linear-gradient(90deg, #000, transparent 2px),repeating-linear-gradient(transparent, #000 2px), linear-gradient(#007f0c 0.01%, #004306 100%);
     --box-shadow-content: inset 0 0 0 2px var(--accent-color, #00CC14);    
     --box-shadow-button: 2px 2px 0 var(--accent-color, #00CC14);
+    --repeating-gradient: #000;
+    --linear-gradient: #007f0c 0.01%, #004306;
     --text-stoke: #000;
     --button-text-color: #00CC14;
     --heart-contour: #00CC14;
