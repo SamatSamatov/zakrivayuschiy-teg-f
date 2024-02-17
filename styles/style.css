@@ -19,7 +19,7 @@
   max-inline-size: 700px;
   min-block-size: 100dvb;
   margin: 0 auto;
-  font-family: var(--main-font, 'Inter-Variable', 'Arial');
+  font-family: var(--main-font), 'Inter-Variable', sans-serif;
   font-variation-settings: 'wght' var(--font-weight-normal);
   background-color: var(--main-color, #fff);
   color: var(--accent-color, #000);
@@ -31,7 +31,7 @@
 
 .header {
   margin-block-start: 100px;
-  font-family: var(--accent-font, 'PressStart2P', 'Arial');
+  font-family: var(--accent-font), 'PressStart2P', 'Arial';
   text-transform: uppercase;
   font-weight: var(--font-weight-normal, 400);
   background-color: var(--main-color, #fff);
@@ -128,7 +128,7 @@
 .article {
   background-color: var(--main-color, #fff);
   box-shadow: var(--box-shadow-content, inset 0 0 0 2px var(--accent-color, #000));
-  font-family: var(--main-font, 'Inter-Variable', 'Sans-serif');
+  font-family: var(--main-font), 'Inter-Variable', sans-serif;
 }
 
 .article-title {
@@ -167,7 +167,7 @@
 
 .watermark-img {
   position: absolute;
-  font-family: var(--accent-font, 'PressStart2P', 'Arial');
+  font-family: var(--accent-font), 'PressStart2P', 'Arial';
   text-transform: uppercase;
   top: 28px;
   right: 27px;
@@ -254,7 +254,7 @@
 }
 
 .button-common-styles {
-  font-family: var(--accent-font, 'PressStart2P', 'Arial');
+  font-family: var(--accent-font), 'PressStart2P', 'Arial';
   background-color: var(--main-color, #fff);
   position: relative;
   overflow: hidden;
@@ -293,7 +293,7 @@
 .button__text {
   position: relative;
   color: var(--button-text-color, #fff);
-  font-family: var(--accent-font, 'PressStart2P', 'Arial');
+  font-family: var(--accent-font), 'PressStart2P', 'Arial';
   font-weight: inherit;
   font-size: 14px;
   line-height: 0.9;
@@ -412,7 +412,7 @@ a {
 }
 
 .pop-up-text {
-  font-family: var(--accent-font, 'PressStart2P', 'Arial');
+  font-family: var(--accent-font), 'PressStart2P', 'Arial';
   font-weight: inherit;
   font-size: 14px;
   line-height: 1.5;
